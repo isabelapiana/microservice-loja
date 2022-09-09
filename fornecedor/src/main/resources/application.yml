@@ -1,0 +1,16 @@
+
+server:
+  port: 8086
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url: 
+      defaultZone: http://localhost:8762/eureka
+      
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: 'fornecedor'
