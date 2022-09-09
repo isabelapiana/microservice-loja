@@ -23,6 +23,11 @@ public class CompraDTO {
 	public void setEndereco(EnderecoDTO endereco) {
 		this.endereco = endereco;
 	}
+
+	@Override
+	public String toString() {
+		return "CompraDTO [itens=" + itens + ", endereco=" + endereco + "]";
+	}
 	
 	
 }
